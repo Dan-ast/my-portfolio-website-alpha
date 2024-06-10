@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Front-end developer - Anastasiia Dekret">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Contact Page</title>
+    <style>
+        :root {
+            --background-color: #121212;
+            --text-color: #FFFFFF;
+            --link-color: #FFCBCB;
+            --accent-color: #58a6ff;
+        }
+
+        @media (max-width: 600px) {
+            .navigation-links a {
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                margin-left: 10px;
+                font-size: 16px;
+            }
+
+            .img-responsive {
+                display: block;
+                margin-left: 40px;
+                margin-bottom: 30px;
+            }  
+        }
+
+        body,
+        navbar {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+            color: var(--accent-color);
+        }
+
+        h2 {
+            margin-top: 60px;
+            font-size: 35px;
+            line-height: 45px;
+        }
+
+        h1 {
+            font-size: 50px;
+            line-height: 54px;
+        }
+
+        h3 {
+            font-size: 20px;
+            line-height: 35px;
+        }
+
+        .navigation-links {
+            color: var(--text-color) !important;
+            display: flex;
+            margin-top: 40px;
+            justify-content: center;
+
+        }
+
+        .navigation-links a {
+            color: var(--accent-color) !important;
+            margin: 20px;
+            border-radius: 10px;
+            padding: 20px 15px;
+            text-decoration: none;
+            text-transform: capitalize;
+            padding: 20px 50px;
+        }
+
+        .contact-link,
+        .about-me-link,
+        .app-links {
+            border: 1px solid;
+            background-color: #132743;
+            color: #FFCBCB;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        a:hover {
+            background-color: transparent;
+            color: var(--links-color);
+        }
+
+        a:hover::after {
+            left: 120%;
+            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .img-responsive {
+            max-width: 80%;
+            height: auto;
+            display: block;
+        }
+
+
+        .info-content {
+            color: var(--text-color);
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .app-links {
+            margin-left: 55px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .contact-me {
+            margin: 0 auto;
+            max-width: 600px;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .contact-me h1 {
+            margin-top: 50px;
+        }
+
+        .contact-me p {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 10px;
+            width: 100%;
+            margin-top: auto;
+            padding-top: 20px 0;
+            font-size: 13px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Anastasiia Dekret</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="/" title="Back to Homepage - Front-end Developer">Home</a>
+                    <a class="nav-link" href="/about.html" title="About me - Front-end Developer - Anastasiia Dekret">About Me</a>
+                    <a class="nav-link" href="/contact.html" title="Contact Me - Anastasiia Dekret - Front-end Developer">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact-me">
+        <h1>📧 Let's get in touch! 📧</h1>
+        <p>
+            Thank you for taking the time to explore my portfolio.
+            <br />
+            If you're interested in learning more about my professional journey, feel free to check out my resume. 
+            <br />
+            If my work resonates with you and you'd like to collaborate, please reach out to me via email at <a href="mailto::anastasiiadekret@yahoo.com">anastasiiadekret@yahoo.com</a>.
+        </p>
+    </div>
+
+    <footer>
+        This website was coded by Anastasiia Dekret, it is open-sourced on GitHub and it is hosted on Netlify.
+
+        <div>
+            <a href="" title="Anastasiia's LinkedIn Profile" target="_blank"> </a>
+            <a href="" title="Anastasiia's GitGub Profile" target="_blank"></a>
+            <a href="mailto::anastasiiadekret@yahoo.com" title="Contact Anastasiia via email" target="_blank"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>
