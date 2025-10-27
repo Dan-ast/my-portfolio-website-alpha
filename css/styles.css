@@ -1,0 +1,153 @@
+:root {
+    --background-color: #0f0f23;
+    --text-color: #FFFFFF;
+    --link-color: #6366f1;
+    --accent-color: #8b5cf6;
+} 
+
+@media (max-width: 600px) {
+    .navigation-links a {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .img-responsive {
+        display: block;
+        margin-left: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+
+body,
+navbar {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    color: var(--accent-color);
+}
+
+h2 {
+    margin-top: 60px;
+    font-size: 35px;
+    line-height: 45px;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 54px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+
+.navigation-links {
+    color: var(--text-color) !important;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+
+}
+
+.navigation-links a {
+    color: var(--accent-color) !important;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 20px 50px;
+}
+
+.contact-link,
+.about-me-link,
+.app-links {
+    border: 1px solid;
+    background-color: #132743;
+    color: #FFCBCB;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+a:hover {
+    background-color: transparent;
+    color: var(--links-color);
+}
+
+a:hover::after {
+    left: 120%;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.img-responsive {
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+
+
+.info-content {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 20px;
+}
+
+.app-links {
+    margin-left: 55px;
+
+    text-align: center;
+    justify-content: center;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: var(--text-color) !important;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+.hero-text {
+    flex: 1;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 10%;
+}
+
+footer {
+    font-size: 13px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--link-color)
+}
